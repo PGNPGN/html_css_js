@@ -1,3 +1,4 @@
+@import url("./box.css");
 div {
     /* width:500px;
     height: 500px; */
@@ -20,4 +21,25 @@ tr{
 td{
     border: 1px solid red;
     padding: 10px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 0.5s;
+}
+/* 마우스를 올리면 기능하는 hover */
+.box:hover {    
+    width: 300px;
+    background-color: royalblue;
+}
+.box:active {
+    background-color: red;
+}
+input:focus {
+    background-color: orange;
+    transition: 0.5s;
+}
+.box::before {
+    content: "Before";
 }
